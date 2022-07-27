@@ -1,15 +1,29 @@
-import { ReactNode } from 'react'
+import Image from "next/image";
 
 type Props = {
-  children?: ReactNode
-}
+  title: string;
+  date: string;
+};
 
-const PostTitle = ({ children }: Props) => {
+const PostTitle = ({ title, date }: Props) => {
   return (
-    <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight md:leading-none mb-12 text-center md:text-left">
-      {children}
-    </h1>
-  )
-}
+    <div className="max-w-2xl mx-auto">
+      <div className="flex flex-col xs:w-full sm:w-3/5">
+        <h3 className="font-display text-gray text-3xl cursor-pointer mb-4 tracking-tighter mt-4 hover:text-dove-gray">
+          {title}
+        </h3>
+        <div className="font-display text-dove-gray flex flex-row justify-start content-center items-center xs:pb-10 sm:pb-5 gap-2">
+          <Image
+            layout="fixed"
+            width={15}
+            height={15}
+            src={"/assets/images/Icons/calendar.webp"}
+          />
+          <p className="text-dove-gray">Published in {date}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default PostTitle
+export default PostTitle;
