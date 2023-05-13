@@ -21,9 +21,7 @@ has similar functionality with NERDTree. You can find the plugin
 You can paste this configuration below into your neovim config file to make defx works similarly with
 NERDTree.
 
-
-{% highlight text %}
-
+```
 call defx#custom#option('_', {
       \ 'winwidth': 30,
       \ 'split': 'vertical',
@@ -101,4 +99,4 @@ function! s:defx_my_settings() abort
   \ defx#do_action('change_vim_cwd')
 endfunction
 
-{% endhighlight %}
+```

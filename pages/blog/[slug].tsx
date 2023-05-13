@@ -1,12 +1,14 @@
-import { useRouter } from "next/router";
-import ErrorPage from "next/error";
 import BlogLayout from "../../components/layout/BlogLayout";
-import { getPostBySlug, getAllPosts } from "../../lib/api";
-import markdownToHtml from "../../lib/markdownToHtml";
-import PostType from "../../types/post";
+import ErrorPage from "next/error";
+import Image from "next/image";
 import PostContent from "../../components/complex/PostContent";
+import PostImage from "../../components/complex/PostImage";
 import PostTitle from "../../components/complex/PostTitle";
+import PostType from "../../types/post";
+import markdownToHtml from "../../lib/markdownToHtml";
 import { format } from "date-fns";
+import { getPostBySlug, getAllPosts } from "../../lib/api";
+import { useRouter } from "next/router";
 
 type Props = {
   post: PostType;
@@ -26,8 +28,10 @@ const Post = ({ post }: Props) => {
       title="Tsara Sudrajat - Software Engineer"
       description="Blog posts"
     >
-      <PostTitle title={post.title} date={format(parsedPostedAt, "PPP")} />
-      <PostContent content={post.content} />
+      <div className="py-20">
+        <PostTitle title={post.title} date={format(parsedPostedAt, "PPP")} />
+        <PostContent content={post.content} image={post.ogImage} />
+      </div>
     </BlogLayout>
   );
 };
@@ -47,9 +51,8 @@ export async function getStaticProps({ params }: Params) {
     "content",
     "slug",
     "author",
-    "coverImage",
     "excerpt",
-    "ogImage",
+    "ogImage"
   ]);
 
   console.log(post.content);

@@ -9,6 +9,7 @@ type PostType = {
   excerpt: string;
   ogImage: {
     url: string;
+    caption: string;
   };
   content: string;
   tags?: string;

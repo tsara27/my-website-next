@@ -1,5 +1,5 @@
 ---
-slug: "how-to-get-particular-objects-in-array?"
+slug: "how-to-get-particular-objects-in-array"
 title: "How to Get Particular Objects in Array?"
 date: "2014-12-21 11:02"
 tags: "blog, ruby, object, array"

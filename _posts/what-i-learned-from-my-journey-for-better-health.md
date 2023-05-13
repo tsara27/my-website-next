@@ -1,11 +1,17 @@
 ---
-slug: "what-i-learned-from-my-journey-for-better-health"
-title: What I Learned from My Journey for Better Health
-date: 2020-02-01 00:00
+slug: what-i-learned-from-my-journey-for-better-health
+title: What I Learned From My Journey for Better Health
+date: 2020-02-08 00:00
 categories: life
-imageCaption: Photo by Anna Pelzer on Unsplash
-tags: blog life
-description: When I was in college my weight was 78kg, eating unhealthy foods, had a bad sleep pattern, and not fit (remembering that I was getting tired easily). Of course, so many times I thought about how to change my life and have better health. I tried different things without any basis of knowledge, so, failures became friends of mine.
+tags: "blog, life"
+author:
+  name: "Tsara"
+  picture: '/assets/images/tsara.png'
+ogImage:
+  url: '/assets/images/posts/what-i-learned-from-my-journey-for-better-health.jpeg'
+  caption: Photo by Anna Pelzer on Unsplash
+excerpt: When I was in college my weight was 78kg, eating unhealthy foods, had a bad sleep pattern, and not fit (remembering that I was getting tired easily). Of course, so many times I thought about how to change my life and have better health. I tried different things without any basis of knowledge, so, failures became friends of mine.
+
 ---
 
 When I was in college my weight was 78kg, eating unhealthy foods, had a bad sleep pattern, and not fit (remembering that I was getting tired easily). Of course, so many times I thought about how to change my life and have better health. I tried different things without any basis of knowledge, so, failures became friends of mine.

@@ -31,7 +31,7 @@ function BlogPosts({ posts }: Props) {
           />
         </div>
         <div className="flex flex-col xs:w-full sm:w-3/5">
-          <Link href="/blog/${post.slug}">
+          <Link href={`/blog/${post.slug}`}>
             <h3 className="font-display text-gray text-3xl cursor-pointer mb-4 tracking-tighter mt-4 hover:text-dove-gray">
               {post.title}
             </h3>
@@ -49,10 +49,11 @@ function BlogPosts({ posts }: Props) {
           </div>
           <p className="text-dove-gray xs:pb-10 sm:pb-5">{post.excerpt}</p>
           <div className="border-b border-light-gray"></div>
-          <Link href="/blog/${post.slug}">
-            <a className="text-faded-red hover:text-dove-gray font-display text-lg pt-7">
-              Read more
-            </a>
+          <Link
+            href={`/blog/${post.slug}`}
+            className="text-faded-red hover:text-dove-gray font-display text-lg pt-7"
+          >
+            Read more
           </Link>
         </div>
       </div>

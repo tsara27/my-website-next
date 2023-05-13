@@ -20,47 +20,44 @@ const Footer = () => {
           <h2 className="font-display text-gray text-5xl mb-2 mt-12 pl-8">
             Quick Links
           </h2>
-          <Link href="/blog">
-            <a className="block hover:underline text-dove-gray mb-2 mt-12 px-8">
-              Blog
-            </a>
+          <Link
+            href="/blog"
+            className="block hover:underline text-dove-gray mb-2 mt-12 px-8"
+          >
+            Blog
           </Link>
         </div>
         <div className="connect-with-me-wrapper sm:basis-full md:basis-1/3">
           <h2 className="font-display text-gray text-5xl mb-2 mt-12 pl-8">
             Connect with Me
           </h2>
-          <Link href="https://github.com/tsara27">
-            <a
-              className="block hover:underline text-dove-gray mb-2 mt-12 px-8"
-              target="__blank"
-            >
-              Github
-            </a>
+          <Link
+            href="https://github.com/tsara27"
+            className="block hover:underline text-dove-gray mb-2 mt-12 px-8"
+            target="__blank"
+          >
+            Github
           </Link>
-          <Link href="http://instagram.com/tsara27">
-            <a
-              className="block hover:underline text-dove-gray mb-2 mt-6 px-8"
-              target="__blank"
-            >
-              Instagram
-            </a>
+          <Link
+            href="http://instagram.com/tsara27"
+            className="block hover:underline text-dove-gray mb-2 mt-6 px-8"
+            target="__blank"
+          >
+            Instagram
           </Link>
-          <Link href="https://www.linkedin.com/in/tsarasudrajat/">
-            <a
-              className="block hover:underline text-dove-gray mb-2 mt-6 px-8"
-              target="__blank"
-            >
-              LinkedIn
-            </a>
+          <Link
+            href="https://www.linkedin.com/in/tsarasudrajat/"
+            className="block hover:underline text-dove-gray mb-2 mt-6 px-8"
+            target="__blank"
+          >
+            LinkedIn
           </Link>
-          <Link href="mailto:tsara.tf@gmail.com?Subject=Hello%20Tsara!">
-            <a
-              className="block hover:underline text-dove-gray mb-2 mt-6 px-8"
-              target="__blank"
-            >
-              Email
-            </a>
+          <Link
+            href="mailto:tsara.tf@gmail.com?Subject=Hello%20Tsara!"
+            className="block hover:underline text-dove-gray mb-2 mt-6 px-8"
+            target="__blank"
+          >
+            Email
           </Link>
         </div>
       </div>

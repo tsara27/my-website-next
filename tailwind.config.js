@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     letterSpacing: {
-      '0': '-1px',
+      0: "-1px",
     },
     fontFamily: {
       sans: ["Nunito Sans", "Roboto", "sans-serif"],
@@ -28,10 +28,11 @@ module.exports = {
       },
     },
     screens: {
-      'xs': '320px',
-      'sm': '576px',
-      'md': '960px',
-      'lg': '1440px',
+      'xs': "0px",
+      'sm': "576px",
+      'sm-tab': "640px",
+      'md': "960px",
+      'lg': "1440px",
     },
   },
   plugins: [],
