@@ -5,7 +5,7 @@ const Footer = () => {
     <section className="footer border border-iron bg-hint-of-red">
       <div className="sm:container mx-auto flex xs:flex-col md:flex-row border-b border-light-gray pb-20">
         <div className="about-me-wrapper sm:basis-full md:basis-1/3">
-          <h2 className="font-display text-gray text-5xl mb-2 mt-12 pl-8">
+          <h2 className="font-display text-gray xs:text-3xl sm:text-4xl md:text-5xlmb-2 mt-12 pl-8">
             About Me
           </h2>
           <p className="text-dove-gray mb-2 mt-12 px-8">
@@ -17,7 +17,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="quick-links-wrapper sm:basis-full md:basis-1/3">
-          <h2 className="font-display text-gray text-5xl mb-2 mt-12 pl-8">
+          <h2 className="font-display text-gray xs:text-3xl sm:text-4xl md:text-5xl mb-2 mt-12 pl-8">
             Quick Links
           </h2>
           <Link
@@ -28,7 +28,7 @@ const Footer = () => {
           </Link>
         </div>
         <div className="connect-with-me-wrapper sm:basis-full md:basis-1/3">
-          <h2 className="font-display text-gray text-5xl mb-2 mt-12 pl-8">
+          <h2 className="font-display text-gray xs:text-3xl sm:text-4xl md:text-5xl mb-2 mt-12 pl-8">
             Connect with Me
           </h2>
           <Link
