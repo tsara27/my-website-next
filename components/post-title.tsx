@@ -14,10 +14,10 @@ const PostTitle = ({ title, date }: Props) => {
         </h3>
         <div className="font-display text-dove-gray flex flex-row justify-start content-center items-center xs:pb-10 sm:pb-5 gap-2">
           <Image
-            layout="fixed"
             width={15}
             height={15}
             src={"/assets/images/Icons/calendar.webp"}
+            alt="Calendar Icon"
           />
           <p className="text-dove-gray">Published in {date}</p>
         </div>

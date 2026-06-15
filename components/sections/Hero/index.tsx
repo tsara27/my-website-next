@@ -20,9 +20,10 @@ function Hero() {
       </div>
       <div className="">
         <Image
-          src="/assets/images/Scene/working.svg"
+          src="/assets/images/tsara.png"
           width={487}
           height={600}
+          alt="Working illustration"
         />
       </div>
     </section>

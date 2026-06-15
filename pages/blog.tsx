@@ -2,6 +2,7 @@ import BlogPosts from "../components/sections/BlogPosts";
 import Post from "../types/post";
 import { getAllPosts } from "../lib/api";
 import BlogLayout from "../components/layout/BlogLayout";
+import { GetStaticProps } from "next";
 
 type Props = {
   allPosts: Post[];
@@ -20,7 +21,7 @@ const Blog = ({ allPosts }: Props) => {
 
 export default Blog;
 
-export const getStaticProps = async () => {
+export const getStaticProps: GetStaticProps<Props> = async () => {
   const allPosts = getAllPosts([
     "title",
     "date",
@@ -33,7 +34,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      allPosts
+      allPosts: allPosts as unknown as Post[]
     },
   };
 };

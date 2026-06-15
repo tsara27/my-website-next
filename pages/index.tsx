@@ -6,7 +6,7 @@ import LandingPageLayout from "../components/layout/LandingPageLayout";
 import LatestBlogPosts from "../components/sections/LatestBlogPosts";
 import Post from "../types/post";
 import { getAllPosts } from "../lib/api";
-import Link from "next/link";
+import { GetStaticProps } from "next";
 
 type Props = {
   allPosts: Post[];
@@ -30,7 +30,7 @@ const Index = ({ allPosts, companies }: Props) => {
 
 export default Index;
 
-export const getStaticProps = async () => {
+export const getStaticProps: GetStaticProps<Props> = async () => {
   const allPosts = getAllPosts([
     "title",
     "date",
@@ -43,7 +43,7 @@ export const getStaticProps = async () => {
   return {
     props: {
       companies: CompanyJSON,
-      allPosts,
+      allPosts: allPosts as unknown as Post[],
     },
   };
 };

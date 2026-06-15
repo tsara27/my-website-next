@@ -42,6 +42,7 @@ function BlogPosts({ posts }: Props) {
               width={15}
               height={15}
               src={"/assets/images/Icons/calendar.webp"}
+              alt="Calendar Icon"
             />
             <p className="text-dove-gray">
               Published in {format(parsedPostedAt, "PPP")}
