@@ -12,7 +12,7 @@ type Props = {
 
 function PostContent({ content, image }: Props) {
   return (
-    <div className="xs:max-w-[90%] sm:max-w-lg sm-tab:max-w-2xl md:max-w-3xl mx-auto">
+    <div className="xs:max-w-[90%] sm:max-w-xl sm-tab:max-w-3xl md:max-w-4xl mx-auto">
       <Image
         src={image.url}
         alt="Photo by Anna Pelzer on Unsplash"
@@ -24,7 +24,7 @@ function PostContent({ content, image }: Props) {
       />
       <span className="text-sm text-right text-dove-gray block">{image.caption}</span>
       <div
-        className={markdownStyles["markdown"]}
+        className={`${markdownStyles["markdown"]} font-article`}
         dangerouslySetInnerHTML={{ __html: content }}
       />
     </div>

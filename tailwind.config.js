@@ -8,9 +8,9 @@ module.exports = {
       0: "-1px",
     },
     fontFamily: {
-      sans: ["Nunito Sans", "Roboto", "sans-serif"],
-      display: ["Playfair Display", "Times New Roman", "sans-serif"],
-      article: ["Roboto Flex"],
+      regular: ['var(--font-nunito-sans)', "Roboto", "sans-serif"],
+      display: ['var(--font-playfair-display)', "Times New Roman", "sans-serif"],
+      article: ['var(--font-roboto-flex)'],
       logo: ["Signerica"],
     },
     extend: {

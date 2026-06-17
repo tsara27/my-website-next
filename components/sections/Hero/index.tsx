@@ -7,7 +7,7 @@ function Hero() {
         <h1 className="font-display text-gray xs:text-5xl md:text-7xl mb-8 tracking-tighter md:mt-32">
           Tsara Fatma
         </h1>
-        <div className="border-l-4 pl-6 border-candy-pink text-xl opacity-30">
+        <div className="font-regular font-normal border-l-4 pl-6 border-candy-pink text-lg opacity-30">
           <p className="mb-3">
             I am software engineer with more than 7 years experience. I have
             contributed / developed various web applications and RESTful APIs.{" "}
@@ -20,7 +20,8 @@ function Hero() {
       </div>
       <div className="">
         <Image
-          src="/assets/images/tsara.png"
+          src="/assets/images/tsara_.png"
+          loading="eager"
           width={487}
           height={600}
           alt="Working illustration"

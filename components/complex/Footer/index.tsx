@@ -62,7 +62,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="sm:container mx-auto flex py-6 justify-between">
-        <p className="text-dove-gray pl-8">2022</p>
+        <p className="text-dove-gray pl-8">2026</p>
         <p className="font-logo text-3xl text-gray pr-8 origin-bottom -rotate-12 relative bottom-5">
           Tsara Fatma
         </p>

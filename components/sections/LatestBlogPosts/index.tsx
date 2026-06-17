@@ -21,7 +21,7 @@ function LatestBlogPosts({ posts }: Props) {
             {post.title}
           </h3>
         </Link>
-        <p className="text-dove-gray sm:pb-5 md:h-52 lg:h-50">{post.excerpt}</p>
+        <p className="font-regular font-light text-dove-gray sm:pb-5 md:h-52 lg:h-50">{post.excerpt}</p>
         <div className="border-b border-light-gray xs:hidden sm:block"></div>
         <Link
           href={`/blog/${post.slug}`}
